@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Royal Dental Clinic</title>
+<meta name="description" content="Royal Dental Clinic - تواصل معنا عبر واتساب أو فيسبوك لحجز موعدك.">
+<style>
+  :root{
+    --bg:#0b0d12;
+    --card:#141821;
+    --border:#232a38;
+    --text:#e8ecf3;
+    --muted:#98a2b5;
+    --gold:#d4af37;
+    --gold-2:#f0d27a;
+    --wa:#25d366;
+    --fb:#1877f2;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Segoe UI",Tahoma,"Noto Sans Arabic",Arial,sans-serif;
+    background:radial-gradient(1200px 600px at 50% -10%,#1a2030 0%,var(--bg) 60%);
+    color:var(--text);
+    min-height:100vh;
+    line-height:1.7;
+  }
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  header{padding:22px 0;border-bottom:1px solid var(--border)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .logo{font-weight:800;letter-spacing:.5px;font-size:1.15rem;color:var(--gold-2);direction:ltr}
+  .logo span{color:var(--text)}
+  nav a{color:var(--muted);text-decoration:none;margin-inline-start:18px;font-size:.95rem;transition:color .2s}
+  nav a:hover{color:var(--gold-2)}
+  .hero{text-align:center;padding:84px 0 64px}
+  .badge{
+    display:inline-block;padding:6px 16px;border:1px solid var(--gold);color:var(--gold-2);
+    border-radius:999px;font-size:.85rem;margin-bottom:22px;
+  }
+  h1{
+    font-size:clamp(2.2rem,6vw,3.8rem);line-height:1.2;margin-bottom:18px;direction:ltr;
+    background:linear-gradient(90deg,var(--gold),var(--gold-2),var(--gold));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero p{color:var(--muted);max-width:560px;margin:0 auto 34px;font-size:1.1rem}
+  .btns{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;padding:14px 28px;border-radius:12px;
+    text-decoration:none;font-weight:700;font-size:1rem;color:#fff;
+    transition:transform .15s,box-shadow .2s;
+  }
+  .btn:hover{transform:translateY(-2px)}
+  .btn svg{width:20px;height:20px;fill:currentColor}
+  .btn-wa{background:var(--wa);color:#06260f;box-shadow:0 8px 24px rgba(37,211,102,.25)}
+  .btn-fb{background:var(--fb);box-shadow:0 8px 24px rgba(24,119,242,.25)}
+  .btn-map{background:var(--card);border:1px solid var(--gold);color:var(--gold-2)}
+  .btn-map:hover{background:var(--gold);color:#1a1405}
+  section{padding:56px 0}
+  h2{font-size:1.6rem;margin-bottom:28px;text-align:center}
+  h2::after{content:"";display:block;width:56px;height:3px;background:var(--gold);margin:12px auto 0;border-radius:2px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+  .card{
+    background:var(--card);border:1px solid var(--border);border-radius:16px;padding:26px 22px;
+    transition:border-color .2s,transform .2s;
+  }
+  .card:hover{border-color:var(--gold);transform:translateY(-3px)}
+  .card h3{color:var(--gold-2);font-size:1.1rem;margin-bottom:8px}
+  .card p{color:var(--muted);font-size:.95rem}
+  .contact{
+    background:var(--card);border:1px solid var(--border);border-radius:20px;
+    padding:36px 24px;text-align:center;
+  }
+  .contact .num{
+    direction:ltr;unicode-bidi:embed;display:inline-block;font-size:1.5rem;font-weight:700;
+    color:var(--gold-2);margin:8px 0 22px;letter-spacing:1px;
+  }
+  footer{border-top:1px solid var(--border);padding:26px 0;text-align:center;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo">ROYAL <span>DENTAL CLINIC</span></div>
+    <nav>
+      <a href="#services">خدماتنا</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="hero">
+      <div class="badge">ابتسامتك تستحق الأفضل</div>
+      <h1>Royal Dental Clinic</h1>
+      <p>رعاية متكاملة للأسنان في أجواء مريحة. تواصل معنا الآن لحجز موعدك.</p>
+      <div class="btns">
+        <a class="btn btn-wa" href="https://wa.me/201288552993" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.17c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+          واتساب
+        </a>
+        <a class="btn btn-fb" href="https://www.facebook.com/people/Royal-Dental-Clinic/61590387765765/?mibextid=wwXIfr&rdid=RoWBULwh5kchZUTW&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CJngbv2Yy%2F%3Fmibextid%3DwwXIfr" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M22 12.07C22 6.5 17.52 2 12 2S2 6.5 2 12.07c0 5.03 3.66 9.2 8.44 9.93v-7.03H7.9v-2.9h2.54V9.85c0-2.52 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.77l-.44 2.9h-2.33V22c4.78-.73 8.44-4.9 8.44-9.93z"/></svg>
+          فيسبوك
+        </a>
+        <a class="btn btn-map" href="https://maps.app.goo.gl/ESqWHBP18wcHycVP7?g_st=aw" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+          الموقع
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>خدماتنا</h2>
+      <div class="grid">
+        <div class="card"><h3>الكشف والاستشارة</h3><p>فحص شامل وخطة علاج واضحة.</p></div>
+        <div class="card"><h3>علاج الأسنان</h3><p>حشوات وعلاج جذور بعناية.</p></div>
+        <div class="card"><h3>التجميل</h3><p>تبييض وتجميل لابتسامة أفضل.</p></div>
+        <div class="card"><h3>التقويم والتركيبات</h3><p>حلول لتنظيم الأسنان واستبدال المفقود منها.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact">
+        <h2>احجز موعدك</h2>
+        <p style="color:var(--muted)">راسلنا على واتساب:</p>
+        <div class="num">+20 12 88552993</div>
+        <div class="btns">
+          <a class="btn btn-wa" href="https://wa.me/201288552993" target="_blank" rel="noopener">ابدأ المحادثة</a>
+          <a class="btn btn-fb" href="https://www.facebook.com/people/Royal-Dental-Clinic/61590387765765/?mibextid=wwXIfr&rdid=RoWBULwh5kchZUTW&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CJngbv2Yy%2F%3Fmibextid%3DwwXIfr" target="_blank" rel="noopener">صفحتنا على فيسبوك</a>
+          <a class="btn btn-map" href="https://maps.app.goo.gl/ESqWHBP18wcHycVP7?g_st=aw" target="_blank" rel="noopener">موقع العيادة على الخريطة</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="y"></span> Royal Dental Clinic. جميع الحقوق محفوظة.</div>
+</footer>
+
+<script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+</body>
+</html>
